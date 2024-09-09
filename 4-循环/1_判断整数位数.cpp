@@ -4,15 +4,17 @@ using namespace std;
 
 int main(){
     int a;
-    a=pow(2,100);
+    cin>>a;
     int count=0;
 
-    while(a!=0){
+    do{
         a/=10;
         count++;
     }
+    while(a>0);
 
-    cout<<"2**100"<<"是"<<count<<"位数"<<endl;
+
+    cout<<"a是"<<count<<"位数"<<endl;
 
     return 0;
 }
